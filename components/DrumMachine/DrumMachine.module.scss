@@ -2,12 +2,18 @@
   display: grid;
   grid-template-rows: repeat(4, 1fr);
   grid-template-columns: repeat(3, 1fr);
-  gap: 25px
+  gap: 25px;
 }
 
-.display {
-  grid-column: 1 / 4;
-  text-align: center;
+.displayContainer {
   background-color: #373733;
-  color: #c0c0c0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-column: 1 / 4;
+
+  .display {
+    text-align: center;
+    color: #c0c0c0;
+  }
 }
